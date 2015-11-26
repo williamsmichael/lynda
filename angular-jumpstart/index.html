@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="HTML, CSS">
+	<meta name="author" content="mple by Michael Williams">
+	<!-- default scripts -->
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<!-- custom scripts -->
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<!-- custom styles -->
+	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div ng-controller = "MyController">
+		<h1>{{ author.name }}</h1>
+		<p>{{ author.title + ', ' + author.company}}</p>
+	</div>
+
+</body>
+</html>
