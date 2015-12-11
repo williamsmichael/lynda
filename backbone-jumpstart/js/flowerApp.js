@@ -28,3 +28,7 @@ var flowerGroupView = new app.allFlowersView({ collection: flowerGroup});
 
 $("#allFlowers").html(flowerGroupView.render().el);
 
+var flowerRouter = new app.Router();
+
+Backbone.history.start();
+
